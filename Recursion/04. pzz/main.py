@@ -4,8 +4,10 @@ def pzz(n):
         return
     print(n)
     pzz(n-1)
+
     print(n)
     pzz(n-1)
+    
     print(n)
 pzz(n)
 
