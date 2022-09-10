@@ -12,7 +12,4 @@ def printClimbStairs(n, asf):
     if n-2 >= 0:
         printClimbStairs(n-2,asf+"2")
 
-    
-
-
 printClimbStairs(n,"")
