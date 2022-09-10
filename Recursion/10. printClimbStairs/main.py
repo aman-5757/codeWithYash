@@ -2,8 +2,6 @@ n = 5
 
 #asf --> answer so far
 
-
-
 def printClimbStairs(n, asf):
     if n == 0 :
         print(asf)
