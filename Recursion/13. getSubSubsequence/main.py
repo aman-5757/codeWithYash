@@ -19,3 +19,4 @@ def getSubsequence(str)->list:
 
 ans = getSubsequence(str)
 print(ans)
+
