@@ -9,7 +9,7 @@ class SLinkedList:
         self.size=0
         self.tail=None
 
-    # write here (Add Last)
+    # 1. write here (Add Last)
     def AddLast(self, newdata):
         node = Node(newdata)
         if self.size == 0:
@@ -21,8 +21,53 @@ class SLinkedList:
             self.tail.next = node
             self.tail = node
         self.size += 1
-   
+    # 2. write here (Add First)
+    def AddFirst(self, newdata):
+        node = Node(newdata)
+        if self.size == 0:
+            self.head = node
+            self.tail = node
     
+        else:
+            # size != 0
+            node.next = self.head
+            self.head = node
+        self.size += 1
+    
+
+    # 3. Display LL
+     def display(self):
+        curr = self.head
+        while curr is not None:
+            print(curr.data)
+            curr = curr.next
+
+    #4. RemoveFirst
+    def RemoveFirst(self):
+        node = Node(newdata)
+        if self.size == 0:
+            print("Sorry! Can't Remove")
+    
+        else:
+            # size != 0
+            self.head = self.head.next
+            self.size -= 1
+
+    #5. getFirst
+    def getFirst(self):
+
+
+    #6. getLast
+    def getLast(self):
+
+
+    #7. getAt
+    def getAt(self, idx):
+        
+
+
+
+
     def listprint(self):
         printval = self.head
         while printval is not None:
