@@ -54,16 +54,32 @@ class SLinkedList:
             self.size -= 1
 
     #5. getFirst
-    def getFirst(self):
+    def getFirst(self)-> int:
 
 
     #6. getLast
-    def getLast(self):
+    def getLast(self)-> int:
 
 
     #7. getAt
-    def getAt(self, idx):
+    def getAt(self, idx)-> int:
+        if self.size == 0:
+            print("Sorry! Can't Get")
+            return -1
         
+        if idx < 0 or idx >= self.size:
+            print("Sorry! Can't Get")
+            return -1
+
+        else:
+            temp = self.head
+            i = 0
+            while i < idx:
+                temp = temp.next
+                i += 1
+            return temp.data
+
+
 
 
 
